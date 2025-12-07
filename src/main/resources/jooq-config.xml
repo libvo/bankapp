@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.19.0.xsd">
+
+  <jdbc>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/bankapp</url>
+    <user>postgres</user>
+    <password>postgres</password>
+  </jdbc>
+
+  <generator>
+    <name>org.jooq.codegen.JavaGenerator</name>
+
+    <database>
+      <name>org.jooq.meta.postgres.PostgresDatabase</name>
+      <inputSchema>public</inputSchema>
+    </database>
+
+    <generate>
+      <tables>true</tables>
+      <records>true</records>
+      <javaTimeTypes>true</javaTimeTypes>
+    </generate>
+
+    <target>
+      <packageName>ru.home.bankapp.jooq</packageName>
+      <directory>target/generated-sources/jooq</directory>
+    </target>
+  </generator>
+</configuration>

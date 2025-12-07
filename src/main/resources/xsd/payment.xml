@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PaymentRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="PaymentRequest.xsd">
+  <SenderCard>1111222233334444</SenderCard>
+  <ReceiverCard>5555666677778888</ReceiverCard>
+  <SenderAccount>ACC-SENDER</SenderAccount>
+  <ReceiverAccount>ACC-RECEIVER</ReceiverAccount>
+  <Amount>1000.00</Amount>
+
+  <AcquirerBic>BANK123</AcquirerBic>
+  <IssuerBic>BANK123</IssuerBic>
+  <ReceiverBic>BANK999</ReceiverBic>
+</PaymentRequest>
